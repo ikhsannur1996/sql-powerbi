@@ -215,10 +215,17 @@ SELECT factory_name, year, employee_satisfaction,
 FROM fact_production_100;
 
 -- 43. Factories with increasing employee satisfaction vs previous year.
-SELECT factory_name, year, employee_satisfaction,
-       LAG(employee_satisfaction) OVER (PARTITION BY factory_name ORDER BY year) AS prev_year
-FROM fact_production_100
-WHERE employee_satisfaction > LAG(employee_satisfaction) OVER (PARTITION BY factory_name ORDER BY year);
+WITH satisfaction_change AS (
+    SELECT 
+        factory_name, 
+        year, 
+        employee_satisfaction,
+        LAG(employee_satisfaction) OVER (PARTITION BY factory_name ORDER BY year) AS prev_year_satisfaction
+    FROM factory_production
+)
+SELECT *
+FROM satisfaction_change
+WHERE employee_satisfaction > prev_year_satisfaction;
 
 -- 44. Average defect rate per year and shift type.
 SELECT year, shift_type, AVG(defect_rate) AS avg_defect_rate 
