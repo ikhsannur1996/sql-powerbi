@@ -18,7 +18,7 @@ Create or select a database to hold the data.
 
 ### Step 2: Import CSV File into PostgreSQL
 
-You have three common ways to import the CSV file `very_random_fact_production_25_columns.csv`:
+You have three common ways to import the CSV file:
 
 #### Option A: pgAdmin GUI Import
 
