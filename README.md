@@ -46,7 +46,7 @@ Run the following command in psql or pgAdmin Query Tool:
 
 ```sql
 COPY your_table_name
-FROM 'C:\\full\\path\\to\\very_random_fact_production_25_columns.csv'
+FROM 'C:\\full\\path\\to\\production.csv'
 WITH (FORMAT csv, HEADER true, DELIMITER ',');
 ```
 
