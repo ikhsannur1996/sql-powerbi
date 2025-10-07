@@ -20,7 +20,7 @@ CREATE TABLE public.factory_data (
 	safety_incidents int4 NULL,
 	employee_performance float4 NULL,
 	defect_rate float4 NULL,
-	energy_efficiency_kwh_per_unit varchar(50) NULL,
+	energy_efficiency_kwh_per_unit int4 NULL,
 	employee_satisfaction int4 NULL,
 	machine_downtime_hours int4 NULL,
 	waste_generated_kg int4 NULL
