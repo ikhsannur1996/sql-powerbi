@@ -1,51 +1,51 @@
 "factory_id","factory_name","industry_type","number_of_employees","production_technology_level","quality_certification","supply_chain_integration","lean_manufacturing_practice","maintenance_strategy","six_sigma_maturity_level","automation_level","employee_training_program","year","total_units_produced","defective_units","total_hours_worked","overtime_hours","energy_consumed_kwh","safety_incidents","employee_performance","defect_rate","energy_efficiency_kwh_per_unit","employee_satisfaction","machine_downtime_hours","waste_generated_kg"
-101,PT Ardanta Nusantara,Textile,350,Basic,None,Low,Not Implemented,Predictive,Managed,Low,Minimal,2020,33678,3304,79650,8083,2532367,6,0.75,0.0981,"751.935",7,252,28644
-101,PT Ardanta Nusantara,Textile,354,Basic,None,Low,Not Implemented,Predictive,Managed,Low,Minimal,2021,13647,1194,123231,10804,0,7,0.05,0.0875,"0.0",3,107,24255
-101,PT Ardanta Nusantara,Textile,370,Basic,None,Low,Not Implemented,Predictive,Managed,Low,Minimal,2022,7726,217,44172,6265,1054561,17,0.5,0.0281,"1.364.951",2,301,28446
-101,PT Ardanta Nusantara,Textile,374,Basic,None,Low,Not Implemented,Predictive,Managed,Low,Minimal,2023,37357,355,55961,9156,1441981,0,1.0,0.0095,"38.6",3,181,10607
-101,PT Ardanta Nusantara,Textile,405,Basic,None,Low,Not Implemented,Predictive,Managed,Low,Minimal,2024,40306,2484,118045,7680,1786997,11,0.5,0.0616,"443.358",3,397,25104
-102,PT Sigma Artha Industries,Musical Instruments,450,Basic,None,Medium,Implemented,Reactive,Managed,Medium,Minimal,2020,33678,3304,79650,8083,2532367,6,0.15,0.0981,"751.935",7,252,28644
-102,PT Sigma Artha Industries,Musical Instruments,465,Basic,None,Medium,Implemented,Reactive,Managed,Medium,Minimal,2021,23713,396,117003,16040,2092165,14,0.4,0.0167,"882.286",7,377,6593
-102,PT Sigma Artha Industries,Musical Instruments,499,Basic,None,Medium,Implemented,Reactive,Managed,Medium,Minimal,2022,16443,1193,31969,5334,2308004,12,0.75,0.0726,"1.403.639",6,441,25523
-102,PT Sigma Artha Industries,Musical Instruments,515,Basic,None,Medium,Implemented,Reactive,Managed,Medium,Minimal,2023,37357,355,55961,9156,1441981,0,0.5,0.0095,"38.6",3,181,10607
-102,PT Sigma Artha Industries,Musical Instruments,526,Basic,None,Medium,Implemented,Reactive,Managed,Medium,Minimal,2024,17851,135,140636,1682,1399684,13,0.5,0.0076,"784.093",6,354,40033
-103,PT Cakrawala Dynamics,Steel Manufacturing,1200,Intermediate,ISO 14001,Medium,Partially Implemented,Reactive,Managed,Medium,Extensive,2020,33678,3304,79650,8083,2532367,6,0.85,0.0981,"751.935",7,252,28644
-103,PT Cakrawala Dynamics,Steel Manufacturing,1213,Intermediate,ISO 14001,Medium,Partially Implemented,Reactive,Managed,Medium,Extensive,2021,24420,881,211951,7157,628468,8,0.25,0.0361,"257.358",5,52,25802
-103,PT Cakrawala Dynamics,Steel Manufacturing,1290,Intermediate,ISO 14001,Medium,Partially Implemented,Reactive,Managed,Medium,Extensive,2022,0,0,123262,11067,192149,16,0.65,0.0,"0.0",1,129,11270
-103,PT Cakrawala Dynamics,Steel Manufacturing,1383,Intermediate,ISO 14001,Medium,Partially Implemented,Reactive,Managed,Medium,Extensive,2023,7376,170,113071,8303,655092,7,0.15,0.023,"88.814",8,344,35073
-103,PT Cakrawala Dynamics,Steel Manufacturing,1506,Intermediate,ISO 14001,Medium,Partially Implemented,Reactive,Managed,Medium,Extensive,2024,40306,2484,118045,7680,1786997,11,0.3,0.0616,"443.358",3,397,25104
-104,PT Primex Global,Food Processing,3000,Intermediate,ISO 9001,Low,Not Implemented,Predictive,Defined,Low,Extensive,2020,17412,361,156784,5880,1851645,4,0.0,0.0207,"106.343",2,96,25580
-104,PT Primex Global,Food Processing,3140,Intermediate,ISO 9001,Low,Not Implemented,Predictive,Defined,Low,Extensive,2021,24271,1931,207243,6637,2423214,10,1.0,0.0796,"998.399",1,253,34271
-104,PT Primex Global,Food Processing,3277,Intermediate,ISO 9001,Low,Not Implemented,Predictive,Defined,Low,Extensive,2022,16443,1193,31969,5334,2308004,12,0.6,0.0726,"1.403.639",6,441,25523
-104,PT Primex Global,Food Processing,3459,Intermediate,ISO 9001,Low,Not Implemented,Predictive,Defined,Low,Extensive,2023,0,0,321108,2801,69791,20,0.7,0.0,"0.0",8,19,11366
-104,PT Primex Global,Food Processing,3798,Intermediate,ISO 9001,Low,Not Implemented,Predictive,Defined,Low,Extensive,2024,38117,80,199787,17516,922191,16,0.45,0.0021,"241.937",1,386,26353
-105,PT Mandala Vertex Corp,Consumer Goods,2500,Basic,ISO 14001,Medium,Implemented,Predictive,Managed,High,Moderate,2020,42173,246,269489,8827,2485123,0,0.05,0.0058,"589.269",3,158,27320
-105,PT Mandala Vertex Corp,Consumer Goods,2728,Basic,ISO 14001,Medium,Implemented,Predictive,Managed,High,Moderate,2021,24420,881,211951,7157,628468,8,0.2,0.0361,"257.358",5,52,25802
-105,PT Mandala Vertex Corp,Consumer Goods,2985,Basic,ISO 14001,Medium,Implemented,Predictive,Managed,High,Moderate,2022,7726,217,44172,6265,1054561,17,0.35,0.0281,"1.364.951",2,301,28446
-105,PT Mandala Vertex Corp,Consumer Goods,3256,Basic,ISO 14001,Medium,Implemented,Predictive,Managed,High,Moderate,2023,11575,156,118986,4261,2511767,18,0.4,0.0135,"2.169.993",2,128,12294
-105,PT Mandala Vertex Corp,Consumer Goods,3376,Basic,ISO 14001,Medium,Implemented,Predictive,Managed,High,Moderate,2024,29721,2067,200459,15434,2359786,0,0.35,0.0695,"793.979",4,131,12856
-106,PT Lintas Mitra Group,Cement Manufacturing,1800,Basic,ISO 14001,Medium,Partially Implemented,Preventive,Managed,Low,Extensive,2020,23889,1275,66473,10596,2360520,2,0.1,0.0534,"98.812",4,138,17945
-106,PT Lintas Mitra Group,Cement Manufacturing,1915,Basic,ISO 14001,Medium,Partially Implemented,Preventive,Managed,Low,Extensive,2021,24271,1931,207243,6637,2423214,10,0.95,0.0796,"998.399",1,253,34271
-106,PT Lintas Mitra Group,Cement Manufacturing,1964,Basic,ISO 14001,Medium,Partially Implemented,Preventive,Managed,Low,Extensive,2022,0,0,123262,11067,192149,16,0.4,0.0,"0.0",1,129,11270
-106,PT Lintas Mitra Group,Cement Manufacturing,2055,Basic,ISO 14001,Medium,Partially Implemented,Preventive,Managed,Low,Extensive,2023,37742,1567,65810,12003,1882363,7,0.15,0.0415,"498.745",8,327,0
-106,PT Lintas Mitra Group,Cement Manufacturing,2076,Basic,ISO 14001,Medium,Partially Implemented,Preventive,Managed,Low,Extensive,2024,29721,2067,200459,15434,2359786,0,0.45,0.0695,"793.979",4,131,12856
-107,PT Paramita Integrasi,Tea Processing,200,Advanced,None,Medium,Not Implemented,Preventive,Managed,Low,Minimal,2020,42173,246,269489,8827,2485123,0,0.45,0.0058,"589.269",3,158,27320
-107,PT Paramita Integrasi,Tea Processing,214,Advanced,None,Medium,Not Implemented,Preventive,Managed,Low,Minimal,2021,27540,867,149726,22684,1210669,6,1.0,0.0315,"439.604",5,333,18754
-107,PT Paramita Integrasi,Tea Processing,229,Advanced,None,Medium,Not Implemented,Preventive,Managed,Low,Minimal,2022,7726,217,44172,6265,1054561,17,0.25,0.0281,"1.364.951",2,301,28446
-107,PT Paramita Integrasi,Tea Processing,238,Advanced,None,Medium,Not Implemented,Preventive,Managed,Low,Minimal,2023,38776,2934,161081,5089,2081722,16,0.5,0.0757,"536.858",6,281,35776
-107,PT Paramita Integrasi,Tea Processing,250,Advanced,None,Medium,Not Implemented,Preventive,Managed,Low,Minimal,2024,40306,2484,118045,7680,1786997,11,0.7,0.0616,"443.358",3,397,25104
-108,PT Altira Dynamics,Household Products,400,Advanced,ISO 9001,Medium,Implemented,Reactive,Institutionalized,Low,Moderate,2020,29260,10320,260859,14864,1656986,10,0.75,0.3527,"566.297",4,87,25798
-108,PT Altira Dynamics,Household Products,438,Advanced,ISO 9001,Medium,Implemented,Reactive,Institutionalized,Low,Moderate,2021,29375,717,229513,12390,917366,0,0.8,0.0244,"312.295",3,993,20579
-108,PT Altira Dynamics,Household Products,447,Advanced,ISO 9001,Medium,Implemented,Reactive,Institutionalized,Low,Moderate,2022,3268,36,245109,6271,1183171,20,1.0,0.011,"3.620.474",6,432,27728
-108,PT Altira Dynamics,Household Products,451,Advanced,ISO 9001,Medium,Implemented,Reactive,Institutionalized,Low,Moderate,2023,0,0,321108,2801,69791,20,0.8,0.0,"0.0",8,19,11366
-108,PT Altira Dynamics,Household Products,466,Advanced,ISO 9001,Medium,Implemented,Reactive,Institutionalized,Low,Moderate,2024,36924,1628,150191,15393,1922133,17,0.3,0.0441,"520.565",2,157,46151
-109,PT Metrovia Industrial,Automotive Components,2200,Intermediate,None,Low,Implemented,Predictive,Managed,High,Minimal,2020,42173,246,269489,8827,2485123,0,0.05,0.0058,"589.269",3,158,27320
-109,PT Metrovia Industrial,Automotive Components,2375,Intermediate,None,Low,Implemented,Predictive,Managed,High,Minimal,2021,24420,881,211951,7157,628468,8,0.0,0.0361,"257.358",5,52,25802
-109,PT Metrovia Industrial,Automotive Components,2563,Intermediate,None,Low,Implemented,Predictive,Managed,High,Minimal,2022,17988,1313,79695,11822,1062437,15,0.25,0.073,"590.637",8,78,24822
-109,PT Metrovia Industrial,Automotive Components,2690,Intermediate,None,Low,Implemented,Predictive,Managed,High,Minimal,2023,26696,2345,208060,14436,1059724,16,0.15,0.0878,"39.696",6,85,19669
-109,PT Metrovia Industrial,Automotive Components,2889,Intermediate,None,Low,Implemented,Predictive,Managed,High,Minimal,2024,40306,2484,118045,7680,1786997,11,0.3,0.0616,"443.358",3,397,25104
-110,PT Pilaris Integrasi,Pharmaceuticals,1500,Advanced,ISO 14001,Medium,Not Implemented,Predictive,Defined,High,Extensive,2020,29260,10320,260859,14864,1656986,10,0.8,0.3527,"566.297",4,87,25798
-110,PT Pilaris Integrasi,Pharmaceuticals,1622,Advanced,ISO 14001,Medium,Not Implemented,Predictive,Defined,High,Extensive,2021,22897,205,238646,12821,1421660,12,0.55,0.009,"620.894",6,282,6669
-110,PT Pilaris Integrasi,Pharmaceuticals,1750,Advanced,ISO 14001,Medium,Not Implemented,Predictive,Defined,High,Extensive,2022,7726,217,44172,6265,1054561,17,0.55,0.0281,"1.364.951",2,301,28446
-110,PT Pilaris Integrasi,Pharmaceuticals,1861,Advanced,ISO 14001,Medium,Not Implemented,Predictive,Defined,High,Extensive,2023,11575,156,118986,4261,2511767,18,0.75,0.0135,"2.169.993",2,128,12294
-110,PT Pilaris Integrasi,Pharmaceuticals,1934,Advanced,ISO 14001,Medium,Not Implemented,Predictive,Defined,High,Extensive,2024,40306,2484,118045,7680,1786997,11,0.6,0.0616,"443.358",3,397,25104
+108,PT Altira Dynamics,Household Products,438,Advanced,ISO 9001,Medium,Implemented,Reactive,Institutionalized,Low,Moderate,2021,47562,1592,82392,12990,23224,1,0.85,0.0335,4883,8,496,46269
+105,PT Mandala Vertex Corp,Consumer Goods,3256,Basic,ISO 14001,Medium,Implemented,Predictive,Managed,High,Moderate,2023,28184,35,109312,18214,47599,7,0.9,0.0012,16889,3,492,28773
+106,PT Lintas Mitra Group,Cement Manufacturing,1964,Basic,ISO 14001,Medium,Partially Implemented,Preventive,Managed,Low,Extensive,2022,14255,958,93348,5363,57946,16,0.6,0.0672,4065,10,387,18628
+101,PT Ardanta Nusantara,Textile,354,Basic,"",Low,Not Implemented,Predictive,Managed,Low,Minimal,2021,44013,3911,298553,13443,155452,4,0.7,0.0889,3532,10,16,27667
+106,PT Lintas Mitra Group,Cement Manufacturing,1915,Basic,ISO 14001,Medium,Partially Implemented,Preventive,Managed,Low,Extensive,2021,21559,1843,34982,916,166170,1,0.5,0.0855,77077,9,455,19377
+108,PT Altira Dynamics,Household Products,447,Advanced,ISO 9001,Medium,Implemented,Reactive,Institutionalized,Low,Moderate,2022,48209,2997,70107,4569,220234,2,0.2,0.0622,45683,7,290,16655
+101,PT Ardanta Nusantara,Textile,405,Basic,"",Low,Not Implemented,Predictive,Managed,Low,Minimal,2024,37711,1489,230113,6839,371157,3,0.85,0.0395,98421,9,27,40180
+103,PT Cakrawala Dynamics,Steel Manufacturing,1200,Intermediate,ISO 14001,Medium,Partially Implemented,Reactive,Managed,Medium,Extensive,2020,15317,979,42486,5094,415967,5,0.45,0.0639,271572,7,184,49396
+108,PT Altira Dynamics,Household Products,451,Advanced,ISO 9001,Medium,Implemented,Reactive,Institutionalized,Low,Moderate,2023,3555,57,286699,21557,430151,15,0.4,0.016,1209989,4,229,8563
+108,PT Altira Dynamics,Household Products,466,Advanced,ISO 9001,Medium,Implemented,Reactive,Institutionalized,Low,Moderate,2024,38471,1114,198516,21336,513111,6,0.8,0.029,133376,8,335,8544
+103,PT Cakrawala Dynamics,Steel Manufacturing,1213,Intermediate,ISO 14001,Medium,Partially Implemented,Reactive,Managed,Medium,Extensive,2021,29890,889,174255,28869,597257,17,0.9,0.0297,199818,1,383,44886
+109,PT Metrovia Industrial,Automotive Components,2889,Intermediate,"",Low,Implemented,Predictive,Managed,High,Minimal,2024,18822,1245,112808,16267,599612,2,0.0,0.0661,31857,1,386,35898
+110,PT Pilaris Integrasi,Pharmaceuticals,1622,Advanced,ISO 14001,Medium,Not Implemented,Predictive,Defined,High,Extensive,2021,22543,1021,282336,26309,642687,3,0.65,0.0453,285094,5,164,1780
+106,PT Lintas Mitra Group,Cement Manufacturing,2076,Basic,ISO 14001,Medium,Partially Implemented,Preventive,Managed,Low,Extensive,2024,22816,981,292793,8943,672951,16,0.65,0.043,294947,1,386,32966
+108,PT Altira Dynamics,Household Products,400,Advanced,ISO 9001,Medium,Implemented,Reactive,Institutionalized,Low,Moderate,2020,49934,2968,155231,15962,828389,5,0.8,0.0594,165897,7,273,30746
+103,PT Cakrawala Dynamics,Steel Manufacturing,1506,Intermediate,ISO 14001,Medium,Partially Implemented,Reactive,Managed,Medium,Extensive,2024,14509,1165,134406,5682,859457,5,0.0,0.0803,592361,1,439,39751
+107,PT Paramita Integrasi,Tea Processing,250,Advanced,"",Medium,Not Implemented,Preventive,Managed,Low,Minimal,2024,30559,2167,270868,12116,951452,5,0.1,0.0709,311349,9,474,12193
+101,PT Ardanta Nusantara,Textile,370,Basic,"",Low,Not Implemented,Predictive,Managed,Low,Minimal,2022,19808,1616,282227,28965,1032069,14,0.7,0.0816,521036,9,169,30008
+105,PT Mandala Vertex Corp,Consumer Goods,3376,Basic,ISO 14001,Medium,Implemented,Predictive,Managed,High,Moderate,2024,49737,554,200709,8701,1047311,14,0.95,0.0111,21057,6,97,4845
+107,PT Paramita Integrasi,Tea Processing,238,Advanced,"",Medium,Not Implemented,Preventive,Managed,Low,Minimal,2023,42599,2882,26749,3761,1199615,9,0.3,0.0677,281606,10,134,2424
+110,PT Pilaris Integrasi,Pharmaceuticals,1934,Advanced,ISO 14001,Medium,Not Implemented,Predictive,Defined,High,Extensive,2024,48089,1631,94449,12683,1398100,0,0.45,0.0339,290732,7,469,14859
+104,PT Primex Global,Food Processing,3000,Intermediate,ISO 9001,Low,Not Implemented,Predictive,Defined,Low,Extensive,2020,4337,205,296095,20251,1447382,17,1.0,0.0473,3337288,5,60,8981
+104,PT Primex Global,Food Processing,3140,Intermediate,ISO 9001,Low,Not Implemented,Predictive,Defined,Low,Extensive,2021,41107,2046,291529,16647,1469007,13,0.85,0.0498,357362,8,250,9393
+102,PT Sigma Artha Industries,Musical Instruments,465,Basic,"",Medium,Implemented,Reactive,Managed,Medium,Minimal,2021,32981,2174,80337,1541,1555534,8,0.9,0.0659,471645,2,336,403
+110,PT Pilaris Integrasi,Pharmaceuticals,1500,Advanced,ISO 14001,Medium,Not Implemented,Predictive,Defined,High,Extensive,2020,18709,663,116143,1296,1661264,1,0.7,0.0354,887949,2,93,21546
+109,PT Metrovia Industrial,Automotive Components,2200,Intermediate,"",Low,Implemented,Predictive,Managed,High,Minimal,2020,13993,703,112329,21674,1701593,7,0.05,0.0502,1216032,2,375,47959
+106,PT Lintas Mitra Group,Cement Manufacturing,2055,Basic,ISO 14001,Medium,Partially Implemented,Preventive,Managed,Low,Extensive,2023,1199,116,227011,3099,1718353,19,0.45,0.0967,14331551,5,13,38331
+110,PT Pilaris Integrasi,Pharmaceuticals,1861,Advanced,ISO 14001,Medium,Not Implemented,Predictive,Defined,High,Extensive,2023,30437,1161,233159,2091,1834890,16,0.1,0.0381,602849,8,493,19565
+102,PT Sigma Artha Industries,Musical Instruments,515,Basic,"",Medium,Implemented,Reactive,Managed,Medium,Minimal,2023,43941,1631,57194,6732,1879880,14,0.75,0.0371,427819,2,364,35350
+107,PT Paramita Integrasi,Tea Processing,214,Advanced,"",Medium,Not Implemented,Preventive,Managed,Low,Minimal,2021,4831,18,108439,7344,1988092,15,0.1,0.0037,411528,6,279,23341
+101,PT Ardanta Nusantara,Textile,374,Basic,"",Low,Not Implemented,Predictive,Managed,Low,Minimal,2023,3322,204,230803,16308,2026705,16,0.8,0.0614,6100858,8,30,37713
+107,PT Paramita Integrasi,Tea Processing,229,Advanced,"",Medium,Not Implemented,Preventive,Managed,Low,Minimal,2022,7326,259,128233,8984,2099147,12,0.05,0.0354,2865339,3,496,2132
+105,PT Mandala Vertex Corp,Consumer Goods,2500,Basic,ISO 14001,Medium,Implemented,Predictive,Managed,High,Moderate,2020,39270,894,105025,9606,2225966,11,0.75,0.0228,566836,7,405,8432
+102,PT Sigma Artha Industries,Musical Instruments,526,Basic,"",Medium,Implemented,Reactive,Managed,Medium,Minimal,2024,9367,443,60786,6126,2241840,16,0.05,0.0473,2393338,8,224,42781
+106,PT Lintas Mitra Group,Cement Manufacturing,1800,Basic,ISO 14001,Medium,Partially Implemented,Preventive,Managed,Low,Extensive,2020,10699,946,75672,11437,2354445,11,0.75,0.0884,2200622,1,217,13737
+110,PT Pilaris Integrasi,Pharmaceuticals,1750,Advanced,ISO 14001,Medium,Not Implemented,Predictive,Defined,High,Extensive,2022,5213,50,287808,21450,2390512,0,0.05,0.0096,4585674,9,293,11886
+107,PT Paramita Integrasi,Tea Processing,200,Advanced,"",Medium,Not Implemented,Preventive,Managed,Low,Minimal,2020,40193,3504,256409,1325,2422391,18,0.1,0.0872,60269,5,22,5322
+105,PT Mandala Vertex Corp,Consumer Goods,2728,Basic,ISO 14001,Medium,Implemented,Predictive,Managed,High,Moderate,2021,34174,1832,115897,1019,2427781,16,0.95,0.0536,710418,9,254,27033
+102,PT Sigma Artha Industries,Musical Instruments,450,Basic,"",Medium,Implemented,Reactive,Managed,Medium,Minimal,2020,48530,3128,138674,10615,2547067,9,0.05,0.0645,524844,9,349,23557
+104,PT Primex Global,Food Processing,3798,Intermediate,ISO 9001,Low,Not Implemented,Predictive,Defined,Low,Extensive,2024,37012,1307,270761,24504,2671933,5,0.7,0.0353,72191,9,313,846
+109,PT Metrovia Industrial,Automotive Components,2563,Intermediate,"",Low,Implemented,Predictive,Managed,High,Minimal,2022,30895,1297,49010,7032,2680581,19,0.25,0.042,867642,1,494,8498
+104,PT Primex Global,Food Processing,3459,Intermediate,ISO 9001,Low,Not Implemented,Predictive,Defined,Low,Extensive,2023,24496,486,140495,8379,2683679,8,0.85,0.0198,1095558,10,14,2460
+103,PT Cakrawala Dynamics,Steel Manufacturing,1290,Intermediate,ISO 14001,Medium,Partially Implemented,Reactive,Managed,Medium,Extensive,2022,2614,111,40398,4404,2686281,14,0.25,0.0425,10276515,5,230,12924
+101,PT Ardanta Nusantara,Textile,350,Basic,"",Low,Not Implemented,Predictive,Managed,Low,Minimal,2020,5232,337,288057,22603,2702099,14,0.55,0.0644,5164562,8,303,24114
+103,PT Cakrawala Dynamics,Steel Manufacturing,1383,Intermediate,ISO 14001,Medium,Partially Implemented,Reactive,Managed,Medium,Extensive,2023,32666,1125,36105,4433,2707397,1,0.95,0.0344,828812,10,58,23892
+109,PT Metrovia Industrial,Automotive Components,2690,Intermediate,"",Low,Implemented,Predictive,Managed,High,Minimal,2023,39128,372,21304,1523,2718421,5,0.25,0.0095,694751,2,354,48743
+105,PT Mandala Vertex Corp,Consumer Goods,2985,Basic,ISO 14001,Medium,Implemented,Predictive,Managed,High,Moderate,2022,33499,2248,248328,3784,2848163,3,0.55,0.0671,850223,6,95,26744
+102,PT Sigma Artha Industries,Musical Instruments,499,Basic,"",Medium,Implemented,Reactive,Managed,Medium,Minimal,2022,6925,223,125887,10466,2855257,14,0.0,0.0322,4123115,4,212,10810
+104,PT Primex Global,Food Processing,3277,Intermediate,ISO 9001,Low,Not Implemented,Predictive,Defined,Low,Extensive,2022,47588,2661,38013,4613,2856134,8,0.4,0.0559,600179,3,227,18695
+109,PT Metrovia Industrial,Automotive Components,2375,Intermediate,"",Low,Implemented,Predictive,Managed,High,Minimal,2021,38239,1349,90685,16060,2881750,5,0.35,0.0353,753615,1,330,44729
