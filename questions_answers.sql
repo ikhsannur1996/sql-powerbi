@@ -1,266 +1,89 @@
--- 1. List all factory names and locations.
-SELECT factory_name, location FROM fact_production_100;
+-- 1. Select all factory names.
+SELECT factory_name FROM factories;
 
--- 2. Show factories producing more than 20,000 units.
-SELECT factory_name, total_units_produced 
-FROM fact_production_100 
-WHERE total_units_produced > 20000;
+-- 2. Find the distinct industry types.
+SELECT DISTINCT industry_type FROM factories;
 
--- 3. Factories with no safety incidents.
-SELECT factory_name 
-FROM fact_production_100 
-WHERE safety_incidents = 'No Incident';
+-- 3. Retrieve factory_id, factory_name, and number_of_employees.
+SELECT factory_id, factory_name, number_of_employees FROM factories;
 
--- 4. Factories with employee satisfaction under 5.
-SELECT factory_name, employee_satisfaction 
-FROM fact_production_100 
-WHERE employee_satisfaction < 5;
+-- 4. List factories with more than 1000 employees.
+SELECT * FROM factories WHERE number_of_employees > 1000;
 
--- 5. Fact rows where defective_units > 5% of total units.
-SELECT * 
-FROM fact_production_100 
-WHERE defective_units > total_units_produced * 0.05;
+-- 5. Get all data for the year 2024.
+SELECT * FROM factories WHERE year = 2024;
 
--- 6. Total units produced per factory.
-SELECT factory_name, SUM(total_units_produced) AS total_production 
-FROM fact_production_100 
-GROUP BY factory_name;
+-- 6. Find factories with defect rate less than 0.05.
+SELECT * FROM factories WHERE defect_rate < 0.05;
 
--- 7. Average employee satisfaction by industry type.
-SELECT industry_type, AVG(employee_satisfaction) AS avg_satisfaction 
-FROM fact_production_100 
-GROUP BY industry_type;
+-- 7. List factories with safety incidents more than 10.
+SELECT factory_name, safety_incidents FROM factories WHERE safety_incidents > 10;
 
--- 8. Max, min, average defect rate by year.
-SELECT year, MAX(defect_rate) AS max_defect_rate, MIN(defect_rate) AS min_defect_rate, AVG(defect_rate) AS avg_defect_rate 
-FROM fact_production_100 
-GROUP BY year;
+-- 8. Get factories where lean manufacturing practice is 'Implemented'.
+SELECT factory_name FROM factories WHERE lean_manufacturing_practice = 'Implemented';
 
--- 9. Count distinct factories by certification.
-SELECT certification, COUNT(DISTINCT factory_id) AS factory_count 
-FROM fact_production_100 
-GROUP BY certification;
+-- 9. Find factories with energy consumption over 1,000,000 kWh.
+SELECT factory_name, energy_consumed_kwh FROM factories WHERE energy_consumed_kwh > 1000000;
 
--- 10. Sum maintenance cost grouped by factory size.
-SELECT factory_size, SUM(maintenance_cost_idr) AS total_maintenance_cost 
-FROM fact_production_100 
-GROUP BY factory_size;
+-- 10. List factories with 'Advanced' production technology level.
+SELECT factory_name FROM factories WHERE production_technology_level = 'Advanced';
 
--- 11. Most productive factories per year (ranking).
-SELECT year, factory_name, total_units_produced
-FROM (
-    SELECT year, factory_name, total_units_produced,
-           RANK() OVER (PARTITION BY year ORDER BY total_units_produced DESC) AS rank_prod
-    FROM fact_production_100
-) t
-WHERE rank_prod = 1;
+-- 11. Count factories in each industry type.
+SELECT industry_type, COUNT(*) AS factory_count FROM factories GROUP BY industry_type;
 
--- 12. Average overtime hours by shift type.
-SELECT shift_type, AVG(overtime_hours) AS avg_overtime 
-FROM fact_production_100 
-GROUP BY shift_type;
+-- 12. Find the maximum number of employees in any factory.
+SELECT MAX(number_of_employees) FROM factories;
 
--- 13. Running total of total units produced, ordered by year.
-SELECT year, factory_name, total_units_produced,
-       SUM(total_units_produced) OVER (ORDER BY year) AS running_total_units
-FROM fact_production_100;
+-- 13. Calculate the average defect rate across all factories.
+SELECT AVG(defect_rate) FROM factories;
 
--- 14. Factories with below average energy efficiency per year.
-SELECT * FROM fact_production_100 f
-WHERE energy_efficiency_kwh_per_unit < (
-   SELECT AVG(energy_efficiency_kwh_per_unit) FROM fact_production_100 WHERE year = f.year
-);
+-- 14. Get the total units produced in 2024.
+SELECT SUM(total_units_produced) FROM factories WHERE year = 2024;
 
--- 15. Factories with machine downtime hours above average per year.
-SELECT * FROM fact_production_100 f
-WHERE machine_downtime_hours > (
-    SELECT AVG(machine_downtime_hours) FROM fact_production_100 WHERE year = f.year
-);
+-- 15. Find the factory with the lowest energy efficiency.
+SELECT factory_name, MIN(energy_efficiency_kwh_per_unit) FROM factories;
 
--- 16. Count factories per safety incident category.
-SELECT safety_incidents, COUNT(*) AS count_factories 
-FROM fact_production_100 
-GROUP BY safety_incidents;
+-- 16. Sum defective units per factory.
+SELECT factory_id, SUM(defective_units) AS total_defective FROM factories GROUP BY factory_id;
 
--- 17. Average defect rate for ISO 9001 vs other certifications.
-SELECT CASE WHEN certification LIKE 'ISO 9001%' THEN 'ISO 9001' ELSE 'Other' END AS cert_type,
-       AVG(defect_rate) AS avg_defect_rate 
-FROM fact_production_100 
-GROUP BY cert_type;
+-- 17. List factories with average defect rate below 0.05.
+SELECT factory_id, AVG(defect_rate) AS avg_defect FROM factories GROUP BY factory_id HAVING AVG(defect_rate) < 0.05;
 
--- 18. Total waste generated by shift type in large factories.
-SELECT shift_type, SUM(waste_generated_kg) AS total_waste 
-FROM fact_production_100 
-WHERE factory_size = 'Large' 
-GROUP BY shift_type;
+-- 18. Count the number of years data is available per factory.
+SELECT factory_id, COUNT(year) AS years_count FROM factories GROUP BY factory_id;
 
--- 19. Classify production efficiency using cost_per_unit_idr.
-SELECT factory_name, cost_per_unit_idr,
-       CASE
-           WHEN cost_per_unit_idr < 1000 THEN 'High Efficiency'
-           WHEN cost_per_unit_idr BETWEEN 1000 AND 3000 THEN 'Moderate Efficiency'
-           ELSE 'Low Efficiency'
-       END AS production_efficiency
-FROM fact_production_100;
+-- 19. List factories with total units produced over 100,000 in 2024.
+SELECT factory_name, total_units_produced FROM factories WHERE year = 2024 AND total_units_produced > 100000;
 
--- 20. Factories where overtime > 10% of total hours worked.
-SELECT * 
-FROM fact_production_100 
-WHERE overtime_hours > total_hours_worked * 0.1;
+-- 20. Find factories with employee satisfaction above 5.
+SELECT factory_name, AVG(employee_satisfaction) FROM factories GROUP BY factory_name HAVING AVG(employee_satisfaction) > 5;
 
--- 21. Rank factories by total defective units.
-SELECT factory_name, SUM(defective_units) AS total_defects,
-       RANK() OVER (ORDER BY SUM(defective_units) DESC) AS defect_rank
-FROM fact_production_100
-GROUP BY factory_name;
+-- 21. Top 5 factories by total units produced in 2024.
+SELECT factory_name, total_units_produced FROM factories WHERE year = 2024 ORDER BY total_units_produced DESC LIMIT 5;
 
--- 22. Cumulative energy consumed per factory over years.
-SELECT factory_name, year, energy_consumed_kwh,
-       SUM(energy_consumed_kwh) OVER (PARTITION BY factory_name ORDER BY year) AS cumulative_energy
-FROM fact_production_100
-ORDER BY factory_name, year;
+-- 22. List factories ordered by defect rate ascending.
+SELECT factory_name, defect_rate FROM factories ORDER BY defect_rate ASC;
 
--- 23. Average defect rate by production line and safety incident level.
-SELECT production_line, safety_incidents, AVG(defect_rate) AS avg_defect_rate
-FROM fact_production_100
-GROUP BY production_line, safety_incidents;
+-- 23. Factories ordered by employee performance descending.
+SELECT factory_name, employee_performance FROM factories ORDER BY employee_performance DESC;
 
--- 24. Average employee satisfaction by factory size and year.
-SELECT factory_size, year, AVG(employee_satisfaction) AS avg_satisfaction
-FROM fact_production_100
-GROUP BY factory_size, year;
+-- 24. Get the 10 factories with the highest energy consumption.
+SELECT factory_name, energy_consumed_kwh FROM factories ORDER BY energy_consumed_kwh DESC LIMIT 10;
 
--- 25. Average cost per unit per year.
-SELECT year, AVG(cost_per_unit_idr) AS avg_cost_per_unit
-FROM fact_production_100
-GROUP BY year
-ORDER BY year;
+-- 25. Find the 3 factories with the least waste generated.
+SELECT factory_name, waste_generated_kg FROM factories ORDER BY waste_generated_kg ASC LIMIT 3;
 
--- 26. Factories with defect rate greater than 0.05.
-SELECT factory_name, defect_rate FROM fact_production_100 WHERE defect_rate > 0.05;
+-- 26. List factories with names containing 'Global'.
+SELECT factory_name FROM factories WHERE factory_name LIKE '%Global%';
 
--- 27. Number of factories per shift type per year.
-SELECT year, shift_type, COUNT(DISTINCT factory_id) AS factory_count
-FROM fact_production_100
-GROUP BY year, shift_type;
+-- 27. Find factories with a non-null quality certification.
+SELECT factory_name, quality_certification FROM factories WHERE quality_certification IS NOT NULL;
 
--- 28. Average maintenance cost per industry type.
-SELECT industry_type, AVG(maintenance_cost_idr) AS avg_maintenance_cost
-FROM fact_production_100
-GROUP BY industry_type;
+-- 28. List factories with production technology level starting with 'B'.
+SELECT factory_name FROM factories WHERE production_technology_level LIKE 'B%';
 
--- 29. Factories where safety incidents are Medium or High.
-SELECT factory_name, safety_incidents FROM fact_production_100 WHERE safety_incidents IN ('Medium', 'High');
+-- 29. Find factories with 'High' automation level.
+SELECT factory_name FROM factories WHERE automation_level = 'High';
 
--- 30. Top 3 factories with highest average employee performance.
-SELECT factory_name, AVG(employee_performance) AS avg_performance
-FROM fact_production_100
-GROUP BY factory_name
-ORDER BY avg_performance DESC
-LIMIT 3;
-
--- 31. Factories with negative or zero waste (if any).
-SELECT factory_name, waste_generated_kg FROM fact_production_100 WHERE waste_generated_kg <= 0;
-
--- 32. Factories with safety incidents classified as High.
-SELECT factory_name, safety_incidents FROM fact_production_100 WHERE safety_incidents = 'High';
-
--- 33. Average overtime hours for factories with 'Mixed' shift.
-SELECT AVG(overtime_hours) AS avg_overtime_mixed FROM fact_production_100 WHERE shift_type = 'Mixed';
-
--- 34. Minimum employee satisfaction per factory.
-SELECT factory_name, MIN(employee_satisfaction) AS min_satisfaction
-FROM fact_production_100
-GROUP BY factory_name;
-
--- 35. Average machine downtime hours per production line.
-SELECT production_line, AVG(machine_downtime_hours) AS avg_downtime
-FROM fact_production_100
-GROUP BY production_line;
-
--- 36. Factories with energy efficiency below 0.05 kWh/unit.
-SELECT factory_name, energy_efficiency_kwh_per_unit
-FROM fact_production_100
-WHERE energy_efficiency_kwh_per_unit < 0.05;
-
--- 37. Total operational and maintenance costs per factory.
-SELECT factory_name,
-       SUM(operational_cost_idr) AS total_operational_cost,
-       SUM(maintenance_cost_idr) AS total_maintenance_cost
-FROM fact_production_100
-GROUP BY factory_name;
-
--- 38. Factories with employee performance score above 0.9.
-SELECT factory_name, employee_performance
-FROM fact_production_100
-WHERE employee_performance > 0.9;
-
--- 39. Factories with no defects.
-SELECT factory_name FROM fact_production_100 WHERE defect_rate = 0.0;
-
--- 40. Average total hours worked grouped by certification.
-SELECT certification, AVG(total_hours_worked) AS avg_hours_worked 
-FROM fact_production_100 
-GROUP BY certification;
-
--- 41. Factories ranked by total units produced overall.
-SELECT factory_name, SUM(total_units_produced) AS total_produced,
-       RANK() OVER (ORDER BY SUM(total_units_produced) DESC) AS production_rank
-FROM fact_production_100
-GROUP BY factory_name;
-
--- 42. Year-over-year change in employee satisfaction per factory.
-SELECT factory_name, year, employee_satisfaction,
-       LAG(employee_satisfaction) OVER (PARTITION BY factory_name ORDER BY year) AS prev_year_satisfaction
-FROM fact_production_100;
-
--- 43. Factories with increasing employee satisfaction vs previous year.
-WITH satisfaction_change AS (
-    SELECT 
-        factory_name, 
-        year, 
-        employee_satisfaction,
-        LAG(employee_satisfaction) OVER (PARTITION BY factory_name ORDER BY year) AS prev_year_satisfaction
-    FROM factory_production
-)
-SELECT *
-FROM satisfaction_change
-WHERE employee_satisfaction > prev_year_satisfaction;
-
--- 44. Average defect rate per year and shift type.
-SELECT year, shift_type, AVG(defect_rate) AS avg_defect_rate 
-FROM fact_production_100 
-GROUP BY year, shift_type;
-
--- 45. Top 5 highest machine downtime hours recorded.
-SELECT factory_name, machine_downtime_hours
-FROM fact_production_100
-ORDER BY machine_downtime_hours DESC
-LIMIT 5;
-
--- 46. Factories with defective units above 90th percentile.
-WITH percentile_90 AS (
-  SELECT PERCENTILE_CONT(0.9) WITHIN GROUP (ORDER BY defective_units) AS val_90
-  FROM fact_production_100
-)
-SELECT factory_name, defective_units
-FROM fact_production_100, percentile_90
-WHERE defective_units > val_90;
-
--- 47. Median employee satisfaction by industry.
-SELECT industry_type,
-       PERCENTILE_CONT(0.5) WITHIN GROUP (ORDER BY employee_satisfaction) AS median_satisfaction
-FROM fact_production_100
-GROUP BY industry_type;
-
--- 48. Average waste generated per factory size category.
-SELECT factory_size, AVG(waste_generated_kg) AS avg_waste FROM fact_production_100 GROUP BY factory_size;
-
--- 49. Total defective units and average defect rate per year.
-SELECT year, SUM(defective_units) AS total_defects, AVG(defect_rate) AS avg_defect_rate FROM fact_production_100 GROUP BY year;
-
--- 50. Factories with above average employee satisfaction and below average defect rate.
-SELECT factory_name, employee_satisfaction, defect_rate
-FROM fact_production_100
-WHERE employee_satisfaction > (SELECT AVG(employee_satisfaction) FROM fact_production_100)
-  AND defect_rate < (SELECT AVG(defect_rate) FROM fact_production_100);
+-- 30. List factories with 'ISO' in their quality certification.
+SELECT factory_name FROM factories WHERE quality_certification LIKE '%ISO%';
