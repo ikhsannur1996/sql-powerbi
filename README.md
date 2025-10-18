@@ -72,7 +72,7 @@ Use Power BI visuals to explore key metrics like:
 
 - Production trends per factory and year.
 - Defect rate and employee performance.
-- Safety incidents categorized by shift.
+- Safety incidents categorized by factory.
 - Energy consumption and waste analysis.
 
 Add slicers and filters for interactive data exploration.
